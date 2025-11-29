@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="page-contianer">
+        <header>
+            <img class="nav-logo" src="assets/logo-img.png" alt="Logo img">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="hamburger-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </header>
+        <section id="Hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-text-h1">Premium Wireless Headphones</h1>
+                    <p class="hero-text-para">These premium wireless headphones are designed for powerful sound and maximum comfort. 
+                        With their clean white finish and gold accents, they offer a stylish and modern look.
+                        The soft ear cushions provide a comfortable fit for long listening sessions, 
+                        while the high-quality audio delivers deep bass, 
+                        clear vocals, and an immersive listening experience. 
+                        Perfect for music, gaming, and everyday use.</p>
+                        <button class="hero-text-btn">Shop Now</button>
+                    </div>
+                <div>
+                    <img class="hero-img" src="assets/headphone-img.png" alt="headphone img">
+                </div>
+            </div>
+        </section>
+        <button class="all-products-btn">Categories</button>
+        <section id="Categories-Cards-1,2,3">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/categories gaming lcd .jpg" alt="card-1" data-category="tv">
+                    <h1 class="card-h2">Smart T.V</h1>
+                    <h3 class="card-h2 price">Price : $50</h3>
+                    <p class="card-para">A gaming LCD is a high-performance display designed to provide smooth visuals, 
+                    fast response times, and vibrant colors for an immersive gaming experience. 
+                    It enhances gameplay by reducing lag and motion blur, enjoyable and precise.</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <img src="assets/categories gaming keyboard.jpg" alt="card-2" data-category="keyboard">
+                    <h1 class="card-h2">Gaming Keyboard</h1>
+                    <h3 class="card-h2 price">Price : $28</h3>
+                    <p class="card-para">A gaming keyboard is specially designed for gamers, offering responsive keys, 
+                    customizable lighting, and durable build for intense gameplay. 
+                    It improves accuracy and speed, giving players an edge in fast-paced games</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <img src="assets/categories gaming mouse.jpg" alt="card-3" data-category="mouse">
+                    <h1 class="card-h2">Gaming Mouse</h1>
+                    <h3 class="card-h2 price">Price : $30</h3>
+                    <p class="card-para">A gaming mouse is designed for precision and speed, 
+                    featuring customizable buttons, high DPI, and ergonomic design for comfortable long gaming sessions. 
+                    It enhances control and accuracy, giving gamers an advantage in competitive play</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="Categories-Cards-4,5,6">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/categories gaming airpods.jpg" alt="card-4" data-category="airpod">
+                    <h1 class="card-h2">Gaming Airpods</h1>
+                    <h3 class="card-h2 price">Price : $15</h3>
+                    <p class="card-para">Gaming AirPods are designed to deliver clear sound, low-latency audio, 
+                    and comfortable fit for long gaming sessions. 
+                    They enhance the gaming experience by providing precise audio cues and immersive sound quality.</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <img src="assets/categories gaming cpu.jpg" alt="card-5" data-category="cpu">
+                    <h1 class="card-h2">Gaming Cpu</h1>
+                    <h3 class="card-h2 price">Price : $60</h3>
+                    <p class="card-para">Gaming CPUs deliver high-speed performance for smooth gameplay and multitasking.
+                    They are built to handle heavy graphics, streaming, and powerful applications.
+                    With strong cooling and advanced cores.</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <img src="assets/categories gaming headphone.jpg" alt="card-6" data-category="headphone">
+                    <h1 class="card-h2">Headphone</h1>
+                    <h3 class="card-h2 price">Price : $25</h3>
+                    <p class="card-para">Gaming headphones provide immersive sound, clear communication,
+                    and comfortable design for long gaming sessions. 
+                    They enhance gameplay by delivering precise audio cues and rich sound quality.</p>
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        <button class="products-btn">Show Products</button>
+        <section id="Products-1-12-cards">
+            <div class="products-cards-container">
+                <div class="products-card">
+                    <img src="assets/product-cpu-img-1.jpg" alt="cpu-1">
+                    <h3 class="card-h3">Computer Cpu</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-headphone-img-1.jpg" alt="headphone-1">
+                    <h3 class="card-h3">Headphone</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-mouse-img-2.jpg" alt="keyboard-1">
+                    <h3 class="card-h3">Gaming Mouse</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-airpod-img-1.jpg" alt="airpod-1">
+                    <h3 class="card-h3">Gaming Airpod</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-smart-tv-img-2.jpg" alt="cpu-1">
+                    <h3 class="card-h3">Smart TV</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-airpod-img-2.jpg" alt="headphone-1">
+                    <h3 class="card-h3">Airpod Pro</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-cpu-img-2.jpg" alt="keyboard-1">
+                    <h3 class="card-h3">Gaming Cpu</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-headphone-img-2.jpg" alt="airpod-1">
+                    <h3 class="card-h3">Gaming headphone</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-mouse-img-1.jpg" alt="cpu-1">
+                    <h3 class="card-h3">Mouse</h3>
+                </div>
+                <div class="products-card">
+                    <img src="assets/product-keyboard-img-1.jpg" alt="headphone-1">
+                    <h3 class="card-h3">Computer Keyboard</h3>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <footer>
+                <p class="footer">© 2025 YourCompany. All rights reserved.</p>
+            </footer>
+        </section>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

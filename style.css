@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.page-contianer{
+    max-width: 1300px;
+    margin: auto;
+}
+body{
+    background-color: rgb(146, 145, 145);
+    color: white;
+}
+
+/* Navbar Section */
+
+header{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2rem 1rem;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-logo{
+    height: 8rem;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(146, 145, 145);
+}
+.icons , a{
+    font-size: 1.2rem;
+}
+.icons{
+    color: rgb(146, 145, 145);
+}
+.hamburger-icon{
+    display: none;
+    color: rgb(146, 145, 145);
+}
+
+/* Hero Section */
+
+.hero-container{
+    padding-top: 12rem;
+    margin-bottom: 4rem;
+    height: 28rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-text{
+    color: black;
+    width: 36rem;
+}
+.hero-text-h1{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+.hero-text-para{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.hero-text-btn{
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 1.4rem;
+    background-color: lightblue;
+}
+.hero-img{
+    height: 24rem;
+}
+
+/* Cards Section */
+
+.all-products-btn{
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    background: #a63ffb;
+    background: radial-gradient(circle, rgba(166, 63, 251, 1) 35%, rgba(166, 63, 251, 1) 50%, rgba(237, 78, 110, 1) 100%);
+}
+
+.cards-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    color: black;
+    background: #fff;
+    width: 280px;
+    height: 30rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 3rem;
+}
+.card-btn{
+    font-weight: bold;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: blue;
+}
+.price{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;  
+    font-weight: bold;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Show Products */
+
+.products-btn{
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    background: #a63ffb;
+    background: radial-gradient(circle, rgba(166, 63, 251, 1) 35%, rgba(166, 63, 251, 1) 50%, rgba(237, 78, 110, 1) 100%);
+}
+
+.products-cards-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.products-card{
+    display: none;
+    color: black;
+    background: #fff;
+    width: 240px;
+    height: 16rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 3rem;
+}
+.products-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+
+.footer{
+    height: 3rem;
+    color: rgb(146, 145, 145);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Responsive Design */
+
+@media(max-width:725px){
+    nav > ul{
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: black;
+        margin: auto;
+        margin-top: 3rem;
+        overflow: hidden;
+    }
+    #menuList{
+        transition: all 0.6s;
+    }
+    .hamburger-icon{
+        display: block;
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    .hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text{
+        width: 20rem;
+    }
+    .hero-text-h1{
+    font-size: 1.9rem;
+    }
+    .hero-text-para{
+        font-size: 1rem;
+    }
+    .hero-text-btn{
+        margin-bottom: 1rem;
+    }
+    .hero-img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .all-products-btn{
+        margin-top: 24rem;
+    }
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .products-cards-container{
+        flex-wrap: wrap;
+    }
+}
