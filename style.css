@@ -209,6 +209,7 @@ nav > ul > li > a{
         margin-right: 0.5rem;
     }
     .hero-container{
+        height: 50rem;
         flex-direction: column;
         text-align: center;
     }
